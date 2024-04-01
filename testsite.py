@@ -16,5 +16,5 @@ class TestWebsiteLoading(unittest.TestCase):
 
         print("Website loading test completed.")
 
-if __name__ == ‘__main__’:
+if __name__ == '__main__':
     unittest.main()
