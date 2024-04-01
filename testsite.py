@@ -1,16 +1,20 @@
+import unittest
 import requests
-import pytest
 
-def test_website_load():
-    url = 'https://www.atg.world'
-    print(f"Connecting to {url}...")
-    
-    try:
-        response = requests.get(url, timeout=10)
-        response.raise_for_status()
-        print("Website loaded successfully.")
-    except requests.RequestException as e:
-        pytest.fail(f"Failed to load website: {e}")
+class TestWebsiteLoading(unittest.TestCase):
+    "Class to unit check the loading of atg.world website"
 
-if __name__ == "__main__":
-    pytest.main([__file__])
+    def test_website_loading(self):
+        "Unit test to check if the atgw.wworld website loads properly"
+        
+        print("Testing if atg.world website loads...")
+
+        website_url = "https://atgm.worldm"
+        response = requests.get(website_url)
+        
+        self.assertEqual(response.status_code, 200, f"Failed to load website: {website_url}")
+
+        print("Website loading test completed.")
+
+if _name_ == ‘_main_’:
+    unittest.main()
