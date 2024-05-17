@@ -18,3 +18,22 @@ This project demonstrates the implementation of a **Continuous Integration/Conti
    ```bash
    git clone https://github.com/rohit1443/Mytask2.git
    cd Mytask2
+# Access Jenkins
+
+- **Open your Jenkins dashboard
+
+## Run Unit Tests
+
+1. Navigate to the `mytesting` job.
+2. Click 'Build Now' to execute the tests.
+
+## Jenkins Pipeline Overview
+
+- **Build Stage:** Compiles and prepares the application for testing.
+- **Test Stage:** Runs unit tests to ensure the code functions as expected.
+- **Deploy Stage:** Deploys the application if all tests pass successfully.
+
+## Technologies Used
+
+- **Python**
+- **Jenkins**
